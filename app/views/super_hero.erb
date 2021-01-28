@@ -1,30 +1,29 @@
-<h1>Create a Team and Heros!</h1>
-<form method = 'post' action = '/team'>
+<h1>Create a Team and Heroes!</h1>
+<form method = 'post' action = '/teams'>
 <label for="Team Name"> Team Name:</label>
-<input id="team_name" type = "text" name = "name">
+<input id="team_name" type = "text" name = "team[name]">
 <label for="Team Motto"> Team Name:</label>
-<input id="team_motto" type = "text" name = "motto">
+<input id="team_motto" type = "text" name = "team[motto]">
 <h2>Hero 1</h2>
 <label for="Hero's Name"> Hero's Name:</label>
-<input id="member1_name" type = "text" name = "name">
+<input id="member1_name" type = "text" name = "team[members][][name]">
 <label for="Hero's Power"> Hero's Power:</label>
-<input id="member1_power" type = "text" name = "power">
+<input id="member1_power" type = "text" name = "team[members][][power]">
 <label for="Hero's Biography"> Hero's Biography:</label>
-<input id="member1_bio" type = "text" name = "bio">
+<input id="member1_bio" type = "text" name = "team[members][][bio]">
 <h2>Hero 2</h2>
 <label for="Hero's Name"> Hero's Name:</label>
-<input id="member2_name" type = "text" name = "name">
+<input id="member2_name" type = "text" name = "team[members][][name]">
 <label for="Hero's Power"> Hero's Power:</label>
-<input id="member2_power" type = "text" name = "power">
+<input id="member2_power" type = "text" name = "team[members][][power]">
 <label for="Hero's Biography"> Hero's Biography:</label>
-<input id="member2_bio" type = "text" name = "bio">
-<input value="Submit" type = "submit">
+<input id="member2_bio" type = "text" name = "team[members][][bio]">
 <h2>Hero 3</h2>
 <label for="Hero's Name"> Hero's Name:</label>
-<input id="member3_name" type = "text" name = "name">
+<input id="member3_name" type = "text" name = "team[members][][name]">
 <label for="Hero's Power"> Hero's Power:</label>
-<input id="member3_power" type = "text" name = "power">
+<input id="member3_power" type = "text" name = "team[members][][power]">
 <label for="Hero's Biography"> Hero's Biography:</label>
-<input id="member3_bio" type = "text" name = "bio">
-<input value="Submit" type = "submit">
+<input id="member3_bio" type = "text" name = "team[members][][bio]">
+<input value="submit" type = "submit">
 </form>

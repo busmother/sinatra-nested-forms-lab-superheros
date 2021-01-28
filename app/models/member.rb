@@ -7,6 +7,7 @@ class Member
         @name = name
         @power = power
         @bio = bio
+        @@all << self
     end
 
     def self.all
